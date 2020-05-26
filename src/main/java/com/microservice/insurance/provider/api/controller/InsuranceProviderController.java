@@ -12,6 +12,7 @@ import java.util.stream.Stream;
 @RequestMapping("/insurance-service")
 public class InsuranceProviderController {
 
+
     @GetMapping("/get-all-plans")
     public List<String> getAllPlans(){
         return Stream.of("Premium", "Gold", "Platinum").collect(Collectors.toList());
